@@ -36,4 +36,6 @@ $(document).ready(function() {
 	attachLink('#twitter_icon', 'http://www.twitter.com/VRSanchez8717');
 	attachLink('#github_icon', 'http://www.github.com/tdbts');
 
+	$('#send_email_btn').popover({content: 'Thanks for reaching out!'}, 'click');
+
 });

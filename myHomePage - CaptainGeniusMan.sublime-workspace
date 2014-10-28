@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bb",
+				"border-bottom"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
 				"twee",
 				"tweets_06_2012_data"
 			],
@@ -279,7 +291,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4847,
+				"buffer_size": 6191,
 				"line_ending": "Windows"
 			}
 		},
@@ -287,7 +299,7 @@
 			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 63,
+				"buffer_size": 690,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,7 +307,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 846,
+				"buffer_size": 1426,
 				"line_ending": "Windows"
 			}
 		}
@@ -303,9 +315,41 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 265.0,
+		"height": 150.0,
 		"selected_items":
 		[
+			[
+				"jvs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"co",
+				"Color Picker"
+			],
+			[
+				"colp",
+				"Color Picker"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"cop",
+				"Color Picker"
+			],
+			[
+				"cp",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -313,10 +357,6 @@
 			[
 				"syncss",
 				"Set Syntax: CSS"
-			],
-			[
-				"jvs",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"synjs",
@@ -464,6 +504,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/attachLink.js",
+		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollUpToTop.js",
+		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollDownTo.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/tweets/tweetPlay/2012_06.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/tweets/tweetPlay/2012_07.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/tweets/tweetPlay/2012_08.js",
@@ -505,8 +548,6 @@
 		"/C/Users/Vincent/Documents/Hckr/Projects/Project2_Twitter_API/app_tokens.php",
 		"/C/Users/Vincent/Documents/Hckr/Projects/Project2_Twitter_API/index.html",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/Javascript the Definitive Guide/Chapter 7 - Arrays/ECMAScript 5 Array Methods.js",
-		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollUpToTop.js",
-		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollDownTo.js",
 		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollDownToTop.js",
 		"/C/Users/Vincent/Documents/Hckr/OPC/JsTagSphere/test.html",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/useful scripts/FunctionalProgrammingFunctions.js",
@@ -590,8 +631,7 @@
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/Javascript the Definitive Guide/Chapter 7 - Arrays/Multidimensional Arrays.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/messingWith_imgAggregator.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/TINKERimgAggregatorTINKER.js",
-		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/SNIPPET - forin.sublime-snippet",
-		"/C/Users/Vincent/Documents/Hckr/JavaScript/Javascript the Definitive Guide/Chapter 6 - Objects/Class Attribute.js"
+		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/SNIPPET - forin.sublime-snippet"
 	],
 	"find":
 	{
@@ -599,9 +639,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -609,6 +650,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scroll",
+			"100",
+			"collapse",
+			"\"#\"",
+			"right",
+			";\n",
+			"50px",
+			"tab",
+			"5px",
+			"top",
+			"nav",
+			"<mark>",
+			"strong",
+			"-",
+			"small",
 			"font-awesome",
 			"right",
 			"2",
@@ -721,22 +777,7 @@
 			"making of th",
 			"  {\\n    \"titl",
 			"  {\\n    \"tit",
-			"{\\n    \"ti",
-			"{\\n",
-			"},\\n",
-			"\"life_Detail",
-			"\"genre\": ",
-			"    \"year",
-			"    \"art",
-			"itle\": \"",
-			"    \"tit",
-			"\"art",
-			"\"Fra",
-			"\"tit",
-			"\\n",
-			"{\\n",
-			"},",
-			"\"gen"
+			"{\\n    \"ti"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -766,15 +807,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 4847,
+						"buffer_size": 6191,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1898,
-								1898
+								5302,
+								5302
 							]
 						],
 						"settings":
@@ -831,7 +872,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 126.0,
+						"translation.y": 177.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -847,15 +888,15 @@
 					"file": "script.js",
 					"settings":
 					{
-						"buffer_size": 63,
+						"buffer_size": 690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								690,
+								690
 							]
 						],
 						"settings":
@@ -921,15 +962,15 @@
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 846,
+						"buffer_size": 1426,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								49,
-								49
+								903,
+								903
 							]
 						],
 						"settings":
@@ -986,7 +1027,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 515.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1022,7 +1063,7 @@
 		"cols":
 		[
 			0.0,
-			0.644375,
+			0.616875,
 			1.0
 		],
 		"rows":
