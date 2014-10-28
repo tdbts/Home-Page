@@ -54,7 +54,16 @@ html, body {
 }
 
 #more_info {
-	margin-top: 40px;
+	display: table;
+	position: relative;
+	height: 100%;
+	width: 85%;
+	margin-top: 10px;
+	padding-top: 40px;
+}
+
+#more_info {
+	/*margin-top: 40px;*/
 }
 
 #myName {
