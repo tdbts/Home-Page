@@ -32,7 +32,7 @@ html, body {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	padding-bottom: 165px;
+	padding-bottom: 50px;
 }
 
 .text-vertical-center h1 {
@@ -67,8 +67,9 @@ html, body {
 	padding-top: 40px;
 }
 
-#more_info {
-	/*margin-top: 40px;*/
+#more_info_background {
+	background: url('NY_basketball_ct_upsidedown_blur_2.jpg') no-repeat center center scroll;
+	background-size: cover;
 }
 
 #myName {
@@ -109,22 +110,6 @@ h3 {
 #info_plus_menu {
 	padding-bottom: 50px;
 }
-
-/*#city_street_wallpaper {
-	height: 900px;
-	width: 100%;
-	background: url('New-york-street.jpg');
-	background-size: cover;
-}*/
-
-/*#skyline_row {
-	display: table;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	height: 50%;
-	background: url('NY_skylinesun_widescreen.jpg');
-}*/
 
 nav {
 	
