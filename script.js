@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	$('#welcomeButton').on('click', function() {
 		
-		scrollDownTo('#more_info', 750);
+		scrollDownTo('#info_plus_menu', 750);
 	});
 
 	attachLink('#twitter_icon', 'http://www.twitter.com/VRSanchez8717');
