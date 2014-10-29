@@ -25,6 +25,7 @@ $(document).ready(function() {
 	}
 
 	$('.bar-icon').tooltip();
+	$('#back_to_top').tooltip();
 
 	scrollUpToTop(500);
 
@@ -37,5 +38,10 @@ $(document).ready(function() {
 	attachLink('#github_icon', 'http://www.github.com/tdbts');
 
 	$('#send_email_btn').popover({content: 'Thanks for reaching out!'}, 'click');
+
+	$('#back_to_top').on('click', function() {
+		
+		scrollUpToTop(750);
+	});
 
 });

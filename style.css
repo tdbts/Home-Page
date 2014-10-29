@@ -27,12 +27,12 @@ html, body {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	padding-bottom: 50px;
+	padding-bottom: 75px;
 }
 
 .text-vertical-center h1 {
 	font-size: 6em;
-	color: black;
+	color: #000000;
 	padding-bottom: 0px;
 }
 
@@ -41,6 +41,7 @@ html, body {
 	font-size: 1.25em;
 	padding-bottom: 15px;
 	letter-spacing: 3px;
+	margin-top: 10px;
 }
 
 .header {
@@ -76,10 +77,6 @@ html, body {
 	margin-top: 15px;
 }
 
-h3 {
-	margin-top: 10px;
-}
-
 .circle {
 	display: table;
 	margin: 0 auto;
@@ -107,6 +104,15 @@ h3 {
 
 #info_plus_menu {
 	padding-bottom: 50px;
+}
+
+#back_to_top {
+	font-size: 1.5em;
+	color: #000000;
+}
+
+footer {
+
 }
 
 nav {
