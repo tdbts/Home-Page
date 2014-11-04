@@ -291,7 +291,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7620,
+				"buffer_size": 7639,
 				"line_ending": "Windows"
 			}
 		},
@@ -305,6 +305,14 @@
 		},
 		{
 			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 1917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style_ie.css",
 			"settings":
 			{
 				"buffer_size": 1949,
@@ -331,9 +339,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 334.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
 			[
 				"colp",
 				"Color Picker"
@@ -409,10 +421,6 @@
 			[
 				"synr",
 				"Set Syntax: R"
-			],
-			[
-				"css",
-				"Set Syntax: CSS"
 			],
 			[
 				"jv",
@@ -503,7 +511,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 316.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -655,7 +663,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -666,6 +674,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"border",
 			"tag",
 			"333",
 			"bottom",
@@ -791,9 +801,7 @@
 			"albumCover\"",
 			"},",
 			"\"life_Detail\"",
-			"\"genre\"",
-			"\"year\"",
-			"\"artist\""
+			"\"genre\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -823,15 +831,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7620,
+						"buffer_size": 7639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1850,
-								1850
+								7639,
+								7639
 							]
 						],
 						"settings":
@@ -888,7 +896,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 384.0,
+						"translation.y": 2319.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -896,7 +904,7 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -911,8 +919,8 @@
 						"selection":
 						[
 							[
-								344,
-								344
+								411,
+								411
 							]
 						],
 						"settings":
@@ -965,7 +973,8 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -978,15 +987,15 @@
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 1949,
+						"buffer_size": 1917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								391,
-								391
+								41,
+								41
 							]
 						],
 						"settings":
@@ -1043,13 +1052,88 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 1736.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "style_ie.css",
+					"settings":
+					{
+						"buffer_size": 1949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 463.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "send_form_email.php",
 					"settings":
 					{
@@ -1114,16 +1198,17 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 199.0,
+						"translation.y": 76.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "test_input.php",
 					"settings":
 					{
@@ -1227,7 +1312,7 @@
 		"cols":
 		[
 			0.0,
-			0.676888046314,
+			0.509895221787,
 			1.0
 		],
 		"rows":
