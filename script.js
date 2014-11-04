@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	function emailModalAJAX() {
 
-		$('#emailForm').submit(function(event) {
+		$('#send_email_btn').on('click', function(event) {
 
 			var firstName = getVal('#first_name');
 			var lastName = getVal('#last_name');
