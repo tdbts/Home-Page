@@ -24,6 +24,49 @@ $(document).ready(function() {
 		});
 	}
 
+	function getVal(selector) {
+
+		return $(selector).val();
+	}
+
+	function emailModalAJAX() {
+
+		$('#emailForm').submit(function(event) {
+
+			var firstName = getVal('#first_name');
+			var lastName = getVal('#last_name');
+			var email = getVal('#email');
+			var comments = getVal('#comments');
+			var url = 'send_form_email.php';
+
+			var request = $.ajax({
+
+				type: "POST",
+				url: url,
+				data: {
+					first_name: firstName,
+					last_name: lastName,
+					email: email,
+					comments: comments
+				}
+			});
+
+			request.done(function() {
+				
+				$('#emailModal').modal('hide');
+			});
+
+			request.fail(function() {
+				
+				alert('Sorry, AJAX was unable to process that request!');
+			});
+
+			event.preventDefault();
+		});
+	}
+
+	emailModalAJAX();	
+
 	$('.bar-icon').tooltip();
 	$('#back_to_top').tooltip();
 
