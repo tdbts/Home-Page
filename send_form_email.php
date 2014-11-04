@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
 
-	require 'test_input.php';
+	require '/shared/test_input.php';
 
 	$email_to = "VinnySanchez87@gmail.com";
 	$email_subject = "New Message From a Visitor to Your Homepage";
@@ -65,7 +65,6 @@ if(isset($_POST['email'])) {
 	'X-Mailer: PHP/' . phpversion();
 	@mail($email_to, $email_subject, $email_message, $headers);
 	sleep(1);
-	//echo "<meta http-equiv='refresh' content=\"0; url=http://www.captaingeniusman.com\">";	
 }
 
 ?>
