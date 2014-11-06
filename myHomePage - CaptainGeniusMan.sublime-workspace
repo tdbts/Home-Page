@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"more",
+				"more_info_background"
+			],
+			[
 				"bb",
 				"border-bottom"
 			],
@@ -291,7 +295,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7639,
+				"buffer_size": 7625,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,7 +303,7 @@
 			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 880,
+				"buffer_size": 1647,
 				"line_ending": "Windows"
 			}
 		},
@@ -307,7 +311,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 1917,
+				"buffer_size": 1670,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +327,7 @@
 			"file": "send_form_email.php",
 			"settings":
 			{
-				"buffer_size": 2338,
+				"buffer_size": 2258,
 				"line_ending": "Windows"
 			}
 		},
@@ -339,9 +343,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
 			[
 				"css",
 				"Set Syntax: CSS"
@@ -349,10 +357,6 @@
 			[
 				"colp",
 				"Color Picker"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
 			],
 			[
 				"jvs",
@@ -528,6 +532,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Vincent/Documents/Hckr/Server-Side Stuff/Nearly Free Speech/Shared/email_modal_template.php",
+		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/attachLink.js",
 		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollUpToTop.js",
 		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/scrollDownTo.js",
@@ -581,7 +587,6 @@
 		"/C/cygwin64/home/Vincent/bashtest/myscript",
 		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/SNIPPET - separator.sublime-snippet",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/Functional Programming in Javascript/scrapPaper.js",
@@ -654,8 +659,7 @@
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/useful scripts/defineProp.js",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/Javascript the Definitive Guide/Chapter 7 - Arrays/Multidimensional Arrays.js",
 		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/messingWith_imgAggregator.js",
-		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/TINKERimgAggregatorTINKER.js",
-		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/SNIPPET - forin.sublime-snippet"
+		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/TINKERimgAggregatorTINKER.js"
 	],
 	"find":
 	{
@@ -674,6 +678,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/*display: table;*/",
+			"display: table",
+			"/*	width: 100%;\n	height: 100%;*/",
+			"/*color: #000000;*/",
+			"color: #000000;",
+			"color: #000000",
+			"margin-bottom: 0px",
+			"tag_",
+			"contact",
+			"href",
+			"column",
+			"screen",
+			"text_link",
+			"href",
+			"50px",
+			"tooltip",
 			"content",
 			"border",
 			"tag",
@@ -785,23 +805,7 @@
 			"visiting",
 			"top",
 			"Alex",
-			"chambelain",
-			"text",
-			"<br><br>",
-			";",
-			"album",
-			"ALBUM",
-			"YEAR",
-			"GENRE",
-			"TITLE",
-			"LIFE_DETAIL",
-			"ARTIST",
-			"this",
-			"albumCover:",
-			"albumCover\"",
-			"},",
-			"\"life_Detail\"",
-			"\"genre\""
+			"chambelain"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -831,15 +835,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7639,
+						"buffer_size": 7625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7639,
-								7639
+								816,
+								816
 							]
 						],
 						"settings":
@@ -896,31 +900,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2319.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 4,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
 					"file": "script.js",
 					"settings":
 					{
-						"buffer_size": 880,
+						"buffer_size": 1647,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								738,
+								738
 							]
 						],
 						"settings":
@@ -981,21 +979,27 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 2,
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 1917,
+						"buffer_size": 1670,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41,
-								41
+								154,
+								154
 							]
 						],
 						"settings":
@@ -1052,7 +1056,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1736.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1137,15 +1141,15 @@
 					"file": "send_form_email.php",
 					"settings":
 					{
-						"buffer_size": 2338,
+						"buffer_size": 2258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								665,
-								665
+								380,
+								380
 							]
 						],
 						"settings":
@@ -1202,7 +1206,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 76.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1312,7 +1316,7 @@
 		"cols":
 		[
 			0.0,
-			0.509895221787,
+			0.605929549902,
 			1.0
 		],
 		"rows":
