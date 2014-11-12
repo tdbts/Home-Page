@@ -1,162 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/shared/font-awesome-4.2.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="style.css">
-<title>tdbts: A Humble Page for Humble Projects</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/shared/font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<title>tdbts: A Humble Page for Humble Projects</title>
 </head>
+
 <body>
-<!-- NAV BAR -->
-<nav class="navbar navbar-inverse">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a href="#" class="navbar-brand">tdbts</a>
-</div>
-<div style="height: 1px;" class="navbar-collapse collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-<li class="active"><a href="/" class="text_link">Home</a></li>
-<li class="dropdown"><a href="#" class="dropdown-toggle text_link" data-toggle="dropdown">About <span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="#">Bio</a></li>
-<li><a href="#">Resume</a></li>
-<li><a href="/about/acknowledgements/">Acknowledgements</a></li>
-</ul>
-</li>
-<li><a href="#" class="dropdown-toggle text_link" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="/portfolio/tag_cloud/">Tweet Cloud</a></li>
-<li><a href="#"><em>Project 2</em></a></li>
-<li><a href="#"><em>Project 3</em></a></li>
-</ul>
-</li>
-<li><a href="/contact/" class="text_link">Contact</a></li>
-</ul>
-<ul class="nav navbar-nav navbar-right">
-<li><a href="#emailModal" role="button" data-toggle="modal" id="mail_icon" class="link_icon"><span class="fa fa-envelope fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Email"></span></a>
-<div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-<h4 class="modal-title">Contact Form</h4>
-</div>
-<div class="modal-body">
-<form action="#" name="commentform" method="post" id="emailForm" class="form-horizontal">
-<div class="form-group">
-<label for="first_name" class="control-label col-md-4">First Name</label>
-<div class="col-md-6">
-<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-</div>
-</div>
-<div class="form-group">
-<label for="last_name" class="control-label col-md-4">Last Name</label>
-<div class="col-md-6">
-<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-</div>
-</div>
-<div class="form-group">
-<label for="email" class="control-label col-md-4">Email Address</label>
-<div class="col-md-6 input-group">
-<span class="input-group-addon">@</span>
-<input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-</div>
-</div>
-<div class="form-group">
-<label for="comment" class="control-label col-md-4">Question or Comment</label>
-<div class="col-md-6">
-<textarea name="comments" id="comments" rows="6" class="form-control" placeholder="Your question or comment here"></textarea>
-</div>
-</div>
-<div class="form-group">
-<div class="col-md-6">
-<button class="btn btn-primary pull-right" type="button" value="Submit" id="send_email_btn">Send</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</li>
-<li><a href="#" id="twitter_icon" class="link_icon"><span class="fa fa-twitter fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Twitter"></span></a></li>
-<li><a href="#" id="github_icon" class="link_icon"><span class="fa fa-github fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Github"></span></a></li>
-</ul>
-</div>
-</div>
-</nav>
-<!-- LANDING PAGE -->
-<header id="top" class="header">
-<div id="landing_page_elements" class="text-vertical-center">
-<h1 id="myName">Vinny Sanchez</h1>
-<h3 id="careerDescription"><strong><kbd>Web Development / Data Makeover Artist<kbd></strong></h3>
-<!-- <img src="v2fly.jpg" alt="Vinny" class="img-responsive img-circle" id="myMug" width="125" height="125"> -->
-<a href="#" class="btn btn-success btn-lg" id="welcomeButton">More Info</a>
-</div>
-</header>
-<!-- MORE INFO -->
-<div id="more_info_background" class="header">
-<div class="text-vertical-center">
-<div class="container" id="more_info">
-<div class="row" id="info_plus_menu">
-<div class="col-md-3">
-<span class="fa-stack fa-lg circle" id="circle_1">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
-</span>
-<p class="columnText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente unde ullam praesentium ab tenetur, sit error tempore consectetur odio. Autem.</p>
-<br>
-</div>
-<div class="col-md-3">
-<span class="fa-stack fa-lg circle" id="circle_2">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
-</span>
-<p class="columnText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe et voluptatum, aliquid. Facilis distinctio eveniet fugit nihil veniam esse ex!</p>
-<br>
-</div>
-<div class="col-md-3">
-<span class="fa-stack fa-lg circle" id="circle_3">
-<i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-</span>
-<p class="columnText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti magni perferendis animi delectus, voluptate asperiores quidem iure laborum ipsa accusantium.</p>
-<br>
-</div>
-<div class="col-md-3">
-<ul class="nav nav-pills nav-stacked text-left">
-<li class="active"><a href="#">Projects</a></li>
-<li><a href="/portfolio/tag_cloud/">Tweet Cloud</a></li>
-<li><a href="#"><em>Project 2 (Coming Soon)</em></a></li>
-<li><a href="#"><em>Project 3 (Coming Soon)</em></a></li>
-</ul>
-</div>
-<div class="clearfix visible-lg"></div>
-</div>
-</div>
-<div id="upTop">
-<a href="#"><span class="glyphicon glyphicon-circle-arrow-up" data-toggle="tooltip" data-placement="top" title="Back to Top" id="back_to_top"></span></a>
-</div>
-<footer>
-<div class="footer text-center">
-<div class="container">
-<h4 class="text-muted">tdbts <small>Amplifying the Utility of Your Data</small></h4>
-</div>
-</div>
-</footer>
-</div>
-</div>
-<script src="/shared/jquery-1.11.1.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+	<!-- NAV BAR -->
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">tdbts</a>
+			</div>
+			<div style="height: 1px;" class="navbar-collapse collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="/" class="text_link">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle text_link" data-toggle="dropdown">About <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Bio</a></li>
+							<li><a href="#">Resume</a></li>
+							<li><a href="/about/acknowledgements/">Acknowledgements</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="dropdown-toggle text_link" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/portfolio/tag_cloud/">Tweet Cloud</a></li>
+							<li><a href="#"><em>Project 2</em></a></li>
+							<li><a href="#"><em>Project 3</em></a></li>
+						</ul>
+					</li>
+					<li><a href="/contact/" class="text_link">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#emailModal" role="button" data-toggle="modal" id="mail_icon" class="link_icon"><span class="fa fa-envelope fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Email"></span></a>
+						<div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Contact Form</h4>
+									</div>
+									<div class="modal-body">
+										<form action="#" name="commentform" method="post" id="emailForm" class="form-horizontal">
+											<div class="form-group">
+												<label for="first_name" class="control-label col-md-4">First Name</label>
+												<div class="col-md-6">
+													<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="last_name" class="control-label col-md-4">Last Name</label>
+												<div class="col-md-6">
+													<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="email" class="control-label col-md-4">Email Address</label>
+												<div class="col-md-6 input-group">
+													<span class="input-group-addon">@</span>
+													<input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="comment" class="control-label col-md-4">Question or Comment</label>
+												<div class="col-md-6">
+													<textarea name="comments" id="comments" rows="6" class="form-control" placeholder="Your question or comment here"></textarea>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-6">
+													<button class="btn btn-primary pull-right" type="button" value="Submit" id="send_email_btn">Send</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#" id="twitter_icon" class="link_icon"><span class="fa fa-twitter fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Twitter"></span></a></li>
+					<li><a href="#" id="github_icon" class="link_icon"><span class="fa fa-github fa-2x bar-icon" data-toggle="tooltip" data-placement="bottom" title="Github"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- LANDING PAGE -->
+	<header id="top" class="header">
+		<div id="landing_page_elements" class="text-vertical-center">
+			<h1 id="myName">Vinny Sanchez</h1>
+			<h3 id="careerDescription"><strong><kbd>Web Development / Data Makeover Artist<kbd></strong></h3>
+			<!-- <img src="v2fly.jpg" alt="Vinny" class="img-responsive img-circle" id="myMug" width="125" height="125"> -->
+			<a href="#" class="btn btn-success btn-lg" id="welcomeButton">More Info</a>
+		</div>
+	</header>
+	
+	<!-- MORE INFO -->		
+	<div id="more_info_background" class="header">
+		<div id="content_container" class="text-vertical-center">
+			<div class="container" id="more_info">
+				<div class="row" id="info_plus_menu">
+					<div class="col-md-3">
+						<span class="fa-stack fa-lg circle" id="circle_1">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
+						</span>
+						<p class="columnText">Hey there.  Welcome to my portfolio webpage.  As I dive into the world of programming, exploring concepts and learning many techniques along the way, I will showcase some of my favorite projects here.  I hope you'll find some of what I create intriguing, and maybe one of my little projects will spark some amazing ideas of your own.</p>
+						<br>
+					</div>
+					<div class="col-md-3">
+						<span class="fa-stack fa-lg circle" id="circle_2">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+						</span>
+						<p class="columnText">In the modern world, we generate vast treasure troves of data throughout our daily, digital lives.  Through smart code and a healthy dose of ingenuity, we can use it all to produce tremendous added value for ourselves and for those we care about.  We are undoubtedly living during one of the most wonderful and exciting chapters of the human saga.</p>
+						<br>
+					</div>
+					<div class="col-md-3">
+						<span class="fa-stack fa-lg circle" id="circle_3">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+						</span>
+						<p class="columnText">So take a look around, and if you see anything you like, definitely let me know.  I'd love to hear your ideas -- about the webpage, or better yet, about how we can use the information at our fingertips to make life a little sweeter.
+						<br><br>
+						Because at the end of the day, it's your data.  How can you make it work for <em>you</em>?
+						</p>
+						<br>
+					</div>
+					<div class="col-md-3">
+						<ul class="nav nav-pills nav-stacked text-left">
+							<li class="active"><a href="#">Projects</a></li>
+							<li><a href="/portfolio/tag_cloud/">Tweet Cloud</a></li>
+							<li><a href="#"><em>Project 2 (Coming Soon)</em></a></li>
+							<li><a href="#"><em>Project 3 (Coming Soon)</em></a></li>
+						</ul>
+					</div>
+					<div class="clearfix visible-lg"></div>
+				</div>
+			</div>
+			<div id="upTop">
+				<a href="#"><span class="glyphicon glyphicon-circle-arrow-up" data-toggle="tooltip" data-placement="top" title="Back to Top" id="back_to_top"></span></a>
+			</div>
+			<footer>
+				<div class="footer text-center">
+					<div class="container">
+						<h4 class="text-muted">tdbts <small>Amplifying the Utility of Your Data</small></h4>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+
+	<script src="/shared/jquery-1.11.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </body>
-</html> 
+
+</html>	
