@@ -77,6 +77,11 @@ $(document).ready(function() {
 
 	emailModalAJAX();
 
+	$(window).load(function() {
+		
+		$('#landing_page_elements').css('visibility', 'visible').hide().fadeIn(2000);
+	});
+
 	$('.bar-icon').tooltip();
 	$('#back_to_top').tooltip();
 

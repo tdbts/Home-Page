@@ -48,8 +48,12 @@ html, body, .header {
 }
 
 #top {	
-	background: url('NY_basketball_ct.jpg') no-repeat center center scroll;
+	background: url('NY_basketball_ct_OPTIMIZED.jpg') no-repeat center center scroll;
 	border-bottom: 1px solid black;
+}
+
+#landing_page_elements {
+	visibility: hidden;
 }
 
 #more_info {
@@ -61,7 +65,7 @@ html, body, .header {
 }
 
 #more_info_background {
-	background: url('NY_basketball_ct_upsidedown_blur_2.jpg') no-repeat center center scroll;
+	background: url('NY_basketball_ct_upsidedown_blur_2_OPTIMIZED.jpg') no-repeat center center scroll;
 }
 
 #top, #more_info_background {
