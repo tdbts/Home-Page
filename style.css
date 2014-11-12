@@ -111,8 +111,6 @@ html, body, .header {
 
 #info_plus_menu {
 	padding-bottom: 50px;
-	-webkit-filter: brightness(40%) contrast(70%);
-	-moz-filter: brightness(40%) contrast(70%);
 }
 
 #back_to_top {
