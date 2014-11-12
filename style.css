@@ -65,7 +65,7 @@ html, body, .header {
 }
 
 #more_info_background {
-	background: url('NY_basketball_ct_upsidedown_blur_2_OPTIMIZED.jpg') no-repeat center center scroll;
+	background: url('NY_basketball_ct_upsidedown_blur_2_OPTIMIZED_CONTRAST.jpg') no-repeat center center scroll;
 }
 
 #top, #more_info_background {
@@ -88,6 +88,8 @@ html, body, .header {
 
 .columnText {
 	text-align: justify;
+	font-family: Tahoma;
+	letter-spacing: 1.75px;
 	font-size: 1.5em;
 	color: #FFFFFF;
 	margin-top: 10px;
@@ -115,4 +117,12 @@ html, body, .header {
 
 #back_to_top {
 	font-size: 1.5em;
+}
+
+#business_name {
+	color: #E4E4E4;
+}
+
+#slogan {
+	color: #C2C9CF;
 }
