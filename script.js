@@ -75,7 +75,7 @@ $(document).ready(function() {
 		});
 	}
 
-	emailModalAJAX();	
+	emailModalAJAX();
 
 	$('.bar-icon').tooltip();
 	$('#back_to_top').tooltip();

@@ -300,14 +300,6 @@
 			}
 		},
 		{
-			"file": "script.js",
-			"settings":
-			{
-				"buffer_size": 1647,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "style.css",
 			"settings":
 			{
@@ -316,10 +308,10 @@
 			}
 		},
 		{
-			"file": "style_ie.css",
+			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 1949,
+				"buffer_size": 1871,
 				"line_ending": "Windows"
 			}
 		},
@@ -532,6 +524,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Vincent/Documents/Hckr/Server-Side Stuff/Nearly Free Speech/Home Page/style_ie.css",
 		"/C/Users/Vincent/Documents/Hckr/Server-Side Stuff/Nearly Free Speech/Shared/email_modal_template.php",
 		"/C/Users/Vincent/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Vincent/Documents/Hckr/jquery/Useful Scripts/attachLink.js",
@@ -658,8 +651,7 @@
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/useful scripts/dense - to close gaps in a sparse array",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/useful scripts/defineProp.js",
 		"/C/Users/Vincent/Documents/Hckr/JavaScript/Javascript the Definitive Guide/Chapter 7 - Arrays/Multidimensional Arrays.js",
-		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/messingWith_imgAggregator.js",
-		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/TINKERimgAggregatorTINKER.js"
+		"/C/Users/Vincent/Documents/Hckr/Play/imgAggregator/messingWith_imgAggregator.js"
 	],
 	"find":
 	{
@@ -678,6 +670,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modal",
+			"arrow",
 			"/*display: table;*/",
 			"display: table",
 			"/*	width: 100%;\n	height: 100%;*/",
@@ -803,9 +797,7 @@
 			"when we",
 			"}",
 			"visiting",
-			"top",
-			"Alex",
-			"chambelain"
+			"top"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -842,8 +834,8 @@
 						"selection":
 						[
 							[
-								816,
-								816
+								6949,
+								6598
 							]
 						],
 						"settings":
@@ -900,94 +892,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1682.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "script.js",
-					"settings":
-					{
-						"buffer_size": 1647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								738,
-								738
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
 					"file": "style.css",
 					"settings":
 					{
@@ -1060,21 +971,27 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 3,
-					"file": "style_ie.css",
+					"buffer": 2,
+					"file": "script.js",
 					"settings":
 					{
-						"buffer_size": 1949,
+						"buffer_size": 1871,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								478,
-								478
+								1093,
+								1093
 							]
 						],
 						"settings":
@@ -1127,17 +1044,17 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 463.0,
+						"translation.y": 386.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "send_form_email.php",
 					"settings":
 					{
@@ -1212,7 +1129,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "test_input.php",
 					"settings":
 					{
@@ -1316,7 +1233,7 @@
 		"cols":
 		[
 			0.0,
-			0.605929549902,
+			0.95,
 			1.0
 		],
 		"rows":
