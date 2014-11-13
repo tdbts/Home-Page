@@ -295,7 +295,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7625,
+				"buffer_size": 8349,
 				"line_ending": "Windows"
 			}
 		},
@@ -303,7 +303,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 1670,
+				"buffer_size": 1916,
 				"line_ending": "Windows"
 			}
 		},
@@ -311,7 +311,7 @@
 			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 1871,
+				"buffer_size": 1988,
 				"line_ending": "Windows"
 			}
 		},
@@ -335,9 +335,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"cop",
+				"Color Picker"
+			],
+			[
+				"colp",
+				"Color Picker"
+			],
 			[
 				"php",
 				"Set Syntax: PHP"
@@ -345,10 +357,6 @@
 			[
 				"css",
 				"Set Syntax: CSS"
-			],
-			[
-				"colp",
-				"Color Picker"
 			],
 			[
 				"jvs",
@@ -359,15 +367,7 @@
 				"Color Picker"
 			],
 			[
-				"col",
-				"Color Picker"
-			],
-			[
 				"colo",
-				"Color Picker"
-			],
-			[
-				"cop",
 				"Color Picker"
 			],
 			[
@@ -670,6 +670,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"popover",
+			"padding-right: 15",
+			"fa-stack fa",
+			"h4",
+			"padding-bottom",
+			"more_info_background",
+			"header",
+			"#",
+			"url",
+			"fade",
 			"modal",
 			"arrow",
 			"/*display: table;*/",
@@ -787,17 +797,7 @@
 			"return",
 			"i",
 			"tfs",
-			"o",
-			"questiontoDisplay",
-			"load",
-			"border",
-			"canvas",
-			">\n",
-			"selectedAlbum",
-			"when we",
-			"}",
-			"visiting",
-			"top"
+			"o"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -827,15 +827,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7625,
+						"buffer_size": 8349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6949,
-								6598
+								4583,
+								4583
 							]
 						],
 						"settings":
@@ -892,25 +892,31 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1682.0,
+						"translation.y": 1209.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
 				{
 					"buffer": 1,
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 1670,
+						"buffer_size": 1916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								154,
-								154
+								1706,
+								1706
 							]
 						],
 						"settings":
@@ -967,31 +973,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1032.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
 					"file": "script.js",
 					"settings":
 					{
-						"buffer_size": 1871,
+						"buffer_size": 1988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1093,
-								1093
+								1088,
+								1088
 							]
 						],
 						"settings":
@@ -1048,7 +1048,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 386.0,
+						"translation.y": 542.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1233,7 +1233,7 @@
 		"cols":
 		[
 			0.0,
-			0.95,
+			0.66,
 			1.0
 		],
 		"rows":
