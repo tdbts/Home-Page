@@ -15,12 +15,14 @@ $(document).ready(function() {
 			scrollTop: $(elementSelector).offset().top
 		}, milliseconds);
 	}
-	
-	function attachLink(selector, url) {
-		
-		$(selector).on('click', function() {
+
+	function attachLinks(selectorsAndURLs) {
+		selectorsAndURLs.forEach(function(obj) {
 			
-			window.open(url);
+			$(obj.selector).on('click', function() {
+				
+				window.open(obj.url);
+			});
 		});
 	}
 
@@ -77,6 +79,13 @@ $(document).ready(function() {
 
 	emailModalAJAX();
 
+	var linkData = [
+	{selector: "#twitter_icon", url: "https://twitter.com/vrsanchez8717"},
+	{selector: "#github_icon", url: "https://github.com/tdbts"} 
+	];
+
+	attachLinks(linkData);
+	
 	$(window).load(function() {
 		
 		$('#landing_page_elements').css('visibility', 'visible').hide().fadeIn(2000);
@@ -92,8 +101,6 @@ $(document).ready(function() {
 		scrollDownTo('#info_plus_menu', 750);
 	});
 
-	attachLink('#twitter_icon', 'http://www.twitter.com/VRSanchez8717');
-	attachLink('#github_icon', 'http://www.github.com/tdbts');
 
 	$('#send_email_btn').popover({content: 'Thanks for reaching out!'}, 'click');
 
