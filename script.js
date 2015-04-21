@@ -40,7 +40,7 @@ $(document).ready(function() {
 		});
 	}
 
-	function emailModalAJAX() {
+	function emailModalAJAXHandler() {
 
 		$('#send_email_btn').on('click', function(event) {
 
@@ -85,36 +85,48 @@ $(document).ready(function() {
 		});
 	}
 
-	emailModalAJAX();
-
-	var linkData = [
-		{selector: "#twitter_icon", url: "https://twitter.com/vrsanchez8717"},
-		{selector: "#github_icon", url: "https://github.com/tdbts"} 
-	];
-
-	attachLinks(linkData);
-	
-	$(window).load(function() {
-		
+	function fadeInWelcomeElements() {
 		$('#landing_page_elements').css('visibility', 'visible').hide().fadeIn(2000);
-	});
+	}
 
-	var toolTipSelectors = ['.bar-icon', '#back_to_top'];
-	activateTooltips(toolTipSelectors);
-
-	scrollUpToTop(500);
-
-	$('#welcomeButton').on('click', function() {
+	function attachEventHandlers() {
 		
-		scrollDownTo('#info_plus_menu', 750);
-	});
+		var toolTipSelectors = ['.bar-icon', '#back_to_top'], 
+			linkData = [
+				{selector: '#twitter_icon', url: "https://twitter.com/vrsanchez8717"},
+				{selector: '#github_icon', url: "https://github.com/tdbts"} 
+			];
 
+		activateTooltips(toolTipSelectors);
+		attachLinks(linkData);
 
-	$('#send_email_btn').popover({content: "Thanks for reaching out!"}, 'click');
+		emailModalAJAXHandler();
 
-	$('#back_to_top').on('click', function() {
+		$('#welcomeButton').on('click', function() {
+			
+			scrollDownTo('#info_plus_menu', 750);
+		});
+
+		$('#send_email_btn').popover({content: "Thanks for reaching out!"}, 'click');
+
+		$('#back_to_top').on('click', function() {
+			
+			scrollUpToTop(750);
+		});
+	}
+
+	function init() {
 		
-		scrollUpToTop(750);
-	});
+		scrollUpToTop(500);
+		
+		attachEventHandlers();
+		
+		$(window).load(function() {
+			
+			fadeInWelcomeElements();
+		});
+	}
+
+	init();
 
 });
