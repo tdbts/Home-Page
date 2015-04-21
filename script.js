@@ -1,19 +1,20 @@
 $(document).ready(function() {
-	
+	function scrollPageAnimation(selector, scrollTopValue, milliseconds) {
+		
+		$(selector).animate({
+			
+			scrollTop: scrollTopValue
+		}, milliseconds);
+	}
+
 	function scrollUpToTop(milliseconds) {
 
-		$('html, body').animate({
-
-			scrollTop: 0
-		}, milliseconds);
+		return scrollPageAnimation('html, body', 0, milliseconds);
 	}	
 
 	function scrollDownTo(elementSelector, milliseconds) {
 
-		$('html, body').animate({
-
-			scrollTop: $(elementSelector).offset().top
-		}, milliseconds);
+		return scrollPageAnimation('html, body', $(elementSelector).offset().top, milliseconds);
 	}
 
 	function attachLinks(selectorsAndURLs) {
@@ -43,11 +44,13 @@ $(document).ready(function() {
 
 		$('#send_email_btn').on('click', function(event) {
 
-			var firstName = getVal('#first_name');
-			var lastName = getVal('#last_name');
-			var email = getVal('#email');
-			var comments = getVal('#comments');
-			var url = '/shared/send_form_email.php';
+			event.preventDefault();
+
+			var firstName = getVal('#first_name'),
+				lastName = getVal('#last_name'),
+				email = getVal('#email'),
+				comments = getVal('#comments'),
+				url = '/shared/send_form_email.php';
 
 			var request = $.ajax({
 
@@ -73,15 +76,20 @@ $(document).ready(function() {
 				alert('Sorry, AJAX was unable to process that request!');
 			});
 
-			event.preventDefault();
+		});
+	}
+
+	function activateTooltips(arrayOfSelectors) {
+		arrayOfSelectors.forEach(function (selector) {
+			$(selector).tooltip();
 		});
 	}
 
 	emailModalAJAX();
 
 	var linkData = [
-	{selector: "#twitter_icon", url: "https://twitter.com/vrsanchez8717"},
-	{selector: "#github_icon", url: "https://github.com/tdbts"} 
+		{selector: "#twitter_icon", url: "https://twitter.com/vrsanchez8717"},
+		{selector: "#github_icon", url: "https://github.com/tdbts"} 
 	];
 
 	attachLinks(linkData);
@@ -91,8 +99,8 @@ $(document).ready(function() {
 		$('#landing_page_elements').css('visibility', 'visible').hide().fadeIn(2000);
 	});
 
-	$('.bar-icon').tooltip();
-	$('#back_to_top').tooltip();
+	var toolTipSelectors = ['.bar-icon', '#back_to_top'];
+	activateTooltips(toolTipSelectors);
 
 	scrollUpToTop(500);
 
@@ -102,7 +110,7 @@ $(document).ready(function() {
 	});
 
 
-	$('#send_email_btn').popover({content: 'Thanks for reaching out!'}, 'click');
+	$('#send_email_btn').popover({content: "Thanks for reaching out!"}, 'click');
 
 	$('#back_to_top').on('click', function() {
 		
