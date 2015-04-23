@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	function scrollPageAnimation(selector, scrollTopValue, milliseconds) {
 		
 		$(selector).animate({
@@ -17,10 +18,16 @@ $(document).ready(function() {
 		return scrollPageAnimation('html, body', $(elementSelector).offset().top, milliseconds);
 	}
 
+	function clickHandler(selector, action) {
+
+		$(selector).on('click', action);
+	}
+
 	function attachLinks(selectorsAndURLs) {
+
 		selectorsAndURLs.forEach(function(obj) {
-			
-			$(obj.selector).on('click', function() {
+
+			clickHandler(obj.selector, function () {
 				
 				window.open(obj.url);
 			});
@@ -40,53 +47,78 @@ $(document).ready(function() {
 		});
 	}
 
-	function emailModalAJAXHandler() {
+	function handleEmailSubmissionRequest(event) {
 
-		$('#send_email_btn').on('click', function(event) {
+		event.preventDefault();
 
-			event.preventDefault();
+		var firstName = getVal('#first_name'),
+			lastName = getVal('#last_name'),
+			email = getVal('#email'),
+			comments = getVal('#comments'),
+			url = '/shared/send_form_email.php';
 
-			var firstName = getVal('#first_name'),
-				lastName = getVal('#last_name'),
-				email = getVal('#email'),
-				comments = getVal('#comments'),
-				url = '/shared/send_form_email.php';
+		var request = $.ajax({
 
-			var request = $.ajax({
+			type: "POST",
+			url: url,
+			data: {
+				first_name: firstName,
+				last_name: lastName,
+				email: email,
+				comments: comments
+			}
+		});
 
-				type: "POST",
-				url: url,
-				data: {
-					first_name: firstName,
-					last_name: lastName,
-					email: email,
-					comments: comments
-				}
-			});
+		request.done(function() {
+			
+			clearField(['#first_name', '#last_name', '#email', '#comments']);
+			$('#send_email_btn').popover('hide');
+			$('#emailModal').modal('hide');
+		});
 
-			request.done(function() {
-				
-				clearField(['#first_name', '#last_name', '#email', '#comments']);
-				$('#send_email_btn').popover('hide');
-				$('#emailModal').modal('hide');
-			});
-
-			request.fail(function() {
-				
-				alert('Sorry, AJAX was unable to process that request!');
-			});
-
+		request.fail(function() {
+			
+			alert('Sorry, AJAX was unable to process that request!');
 		});
 	}
 
+	function emailModalAJAXHandler() {
+
+		clickHandler('#send_email_btn', handleEmailSubmissionRequest);
+	}
+
 	function activateTooltips(arrayOfSelectors) {
+		
 		arrayOfSelectors.forEach(function (selector) {
+			
 			$(selector).tooltip();
 		});
 	}
 
 	function fadeInWelcomeElements() {
+		
 		$('#landing_page_elements').css('visibility', 'visible').hide().fadeIn(2000);
+	}
+
+	function welcomeButtonClickHandler() {
+
+		clickHandler('#welcomeButton', function () {
+			
+			scrollDownTo('#info_plus_menu', 750);
+		});	
+	}
+
+	function emailSubmissionHandler() {
+
+		$('#send_email_btn').popover({content: "Thanks for reaching out!"}, 'click');
+	}
+
+	function backToTopButtonHandler() {
+		
+		clickHandler('#back_to_top', function () {
+			
+			scrollUpToTop(750);
+		});
 	}
 
 	function attachEventHandlers() {
@@ -102,17 +134,10 @@ $(document).ready(function() {
 
 		emailModalAJAXHandler();
 
-		$('#welcomeButton').on('click', function() {
-			
-			scrollDownTo('#info_plus_menu', 750);
-		});
+		welcomeButtonClickHandler();
+		emailSubmissionHandler();
+		backToTopButtonHandler();
 
-		$('#send_email_btn').popover({content: "Thanks for reaching out!"}, 'click');
-
-		$('#back_to_top').on('click', function() {
-			
-			scrollUpToTop(750);
-		});
 	}
 
 	function init() {
